@@ -11,6 +11,9 @@ import Inscrirepage from "./Components/inscrire/inscrire"
 import Client from "./Components/Client/Client";
 import Profile from "./Components/Profil/profil";
 import Guide from "./Components/Guide/Guide";
+import Visites from "./Components/Client/Visites";
+import NavbarClient from "./Components/Navbar/navbarClient";
+import Reservation from "./Components/Main/reservation";
 
 const App = () => {
     return (
@@ -23,6 +26,8 @@ const App = () => {
                 <Route path="/client" element={<EspaceClientLayout />} />
                 <Route path="/profil/*" element={<ProfilLayout />} />
                 <Route path="/guide/*" element={<GuideLayout />} />
+                <Route path="/client/visites" element={<VisitesLayout />} />
+                <Route path="/client/reservation" element={<ReservationLayout />} />
             </Routes>
         </Router>
     );
@@ -64,12 +69,24 @@ const EspaceClientLayout = () => (
 );
 const ProfilLayout = () => (
     <>
+       <NavbarClient />
        <Profile/>
     </>
 );
 const GuideLayout = () => (
     <>
        <Guide/>
+    </>
+);
+const VisitesLayout = () => (
+    <>
+       <Visites/>
+    </>
+);
+const ReservationLayout = () => (
+    <>
+       <NavbarClient />
+       <Reservation/>
     </>
 );
 

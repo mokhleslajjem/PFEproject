@@ -3,6 +3,7 @@ import './main.css'
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { HiOutlineClipboardCheck } from "react-icons/hi";
 import { MdBookmarkAdded } from "react-icons/md"
+import { Link } from 'react-router-dom';
 
 import img from '../../asser/download.jpg'
 import img2 from '../../asser/binzart.jpg'
@@ -119,12 +120,17 @@ const Main = () => {
                           <p>{description}</p>
                         </div>
 
-                        <button className="btn flex">
-                          DETAILS <HiOutlineClipboardCheck className="icon"/>
-                        </button>
-                        <button className="btn flex">
-                          RESERVER <MdBookmarkAdded className="icon"/>
-                        </button>
+                        <Link to="/client/visites">
+                          <button className="btn flex">
+                          DETAILS <MdBookmarkAdded className="icon"/>
+                          </button>
+                        </Link>
+                        <Link to="/client/reservation">
+                          <button className="btn flex">
+                            RESERVER <MdBookmarkAdded className="icon"/>
+                          </button>
+                        </Link>
+
 
 
                       </div>  

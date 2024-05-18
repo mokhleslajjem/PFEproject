@@ -1,10 +1,16 @@
 import React, { useState } from "react";
-// import './Guide.css';
+import './navbarClient.css';
 import { Link } from 'react-router-dom'; // Import Link instead of Router
 import { MdTravelExplore } from "react-icons/md";
 import { IoMdCloseCircle } from "react-icons/io";
 import { TbGridDots } from "react-icons/tb";
 import img from '../../asser/profil.jpg'
+import { CgProfile } from "react-icons/cg";
+import { IoMdSettings } from "react-icons/io";
+import { TbLogout } from "react-icons/tb";
+import { CiSearch } from "react-icons/ci";
+
+
 import {
     DropdownMenu,
     DropdownItem,
@@ -13,15 +19,18 @@ import {
     Form,
     FormGroup,
     ButtonGroup,
+    InputGroupAddon,
     InputGroupText,
     Input,
     InputGroup,
+    Navbar,
     Nav,
+    Container,
     Media,
   } from "reactstrap";
 // import Loginpage from "../Login/Login";
 
-const Guide = () => {
+const NavbarClient = () => {
     const [active, setActive] = useState('navBar');
     const showNav = () => {
         setActive('navBar activeNavbar');
@@ -85,7 +94,7 @@ const Guide = () => {
                                     <i className="ni ni-support-16" />
                                     <span>Sites</span>
                                 </DropdownItem>
-                                <DropdownItem to="/client/visites" tag={Link}>
+                                <DropdownItem to="/admin/user-profile" tag={Link}>
                                     <i className="ni ni-calendar-grid-58" />
                                     <span>Visites</span>
                                 </DropdownItem>
@@ -111,4 +120,5 @@ const Guide = () => {
     );
 };
 
-export default Guide;
+export default NavbarClient;
+
