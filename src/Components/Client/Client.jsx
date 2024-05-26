@@ -111,9 +111,188 @@ const Client = () => {
                         </UncontrolledDropdown>
                     </Nav>
                 </>
+
+                {/* <section id="destinations">
+                    <div className="section_title">
+                        <h3>Destinations</h3> 
+                    </div>
+                    <div class="container tt_desktop">
+                        <div class="row">
+                            <div class="text-white pad_0 pic_container col-sm-4 animated fadeInLeft the_hover_act" full_name="Tunis et les Cotes de Carthage"
+                            short_name="TUNIS">
+                                <a href="http://tunisiatourism.info/fr/destination/tunis">
+                                    <img class="card-img tn mx-auto image d-block" src="http://tunisiatourism.info/thumbs/393-250-destinations-74090301-1514891148.jpg" alt="Card image"  />
+                                        <div class="card-img-overlay">
+                                            <h2 class="Card-title full_name_dest">TUNIS</h2>
+                                        </div>
+                                    
+                                </a>
+
+                            </div>
+                            <div class="Card-img-overlay overlay">
+                                <p class="Card-text">
+                                    <b class="card-title-inner">Tunis et les Cotes de Carthage</b>
+                                    <br></br>
+                                    "Tunis et sa Média, Carthage, Sidi Bou Said sont des lieux chargés d'histoire mais aussi bouillonnan... "
+                                </p>    
+
+                                    
+
+                                
+
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+
+
+                </section> */}
   
 
             </header>
+            <section class="destinations" id="destinations">
+                    <div class="section_title">
+                        <h3>Destinations</h3> 
+                    </div>
+                    <div class="container tt_desktop">
+                        <div class="row">
+                            <div class="text-white pad_0 pic_container col-sm-4 animated fadeInLeft the_hover_act" full_name="Tunis et les Cotes de Carthage"
+                            short_name="TUNIS">
+                                <a href="http://tunisiatourism.info/fr/destination/tunis">
+                                    <img class="card-img tn mx-auto image d-block" src="http://tunisiatourism.info/thumbs/393-250-destinations-74090301-1514891148.jpg" alt="Card image"  />
+                                        <div class="card-img-overlay">
+                                            <h2 class="Card-title full_name_dest">TUNIS</h2>
+                                        </div>
+                                    
+                                </a>
+                                {/* <div class="card-img-overlay overlay">
+                                    <p class="card-text">
+                                        <b class="card-title-inner">Tunis et les Cotes de Cartage</b>
+                                        
+                                        "Tunis et sa Média, Carthage, Sidi Bou Said sont des lieux chargés d'histoire mais aussi bouillonnan... "
+                                    </p>
+                                </div> */}
+
+                            </div>
+                            <div class="text-white pad_0 pic_container col-sm-4 animated fadeInLeft the_hover_act" full_name="Tabarka et Ain draham"
+                            short_name="TABARKA">
+                                <a href="http://tunisiatourism.info/fr/destination/tunis">
+                                    <img class="card-img tn mx-auto image d-block" src="http://tunisiatourism.info/thumbs/393-250-destinations-33609503-1562523804.jpg" alt="Card image"  />
+                                        <div class="card-img-overlay">
+                                            <h2 class="Card-title full_name_dest">TABARKA</h2>
+                                        </div>
+                                    
+                                </a>
+                                {/* <div class="card-img-overlay overlay">
+                                    <p class="card-text">
+                                        <b class="card-title-inner">Tabarka et Ain draham</b>
+                                        
+                                        "Tabarka ou Aïn Draham ? Mer ou forêt ? Les deux vous attendent dans le Nord-Ouest tunisien. Un parad... "                                  </p>
+                                </div> */}
+
+                            </div>
+                            <div class="text-white pad_0 pic_container col-sm-4 animated fadeInLeft the_hover_act" full_name="Hammamet et le Cap Bon"
+                            short_name="HAMMAMET">
+                                <a href="http://tunisiatourism.info/fr/destination/tunis">
+                                    <img class="card-img tn mx-auto image d-block" src="http://tunisiatourism.info/thumbs/393-250-destinations-53544624-1562523579.jpg" alt="Card image"  />
+                                        <div class="card-img-overlay">
+                                            <h2 class="Card-title full_name_dest">HAMMAMET</h2>
+                                        </div>
+                                    
+                                </a>
+                                {/* <div class="card-img-overlay overlay">
+                                    <p class="card-text">
+                                        <b class="card-title-inner">Hammamet et le Cap Bon</b>
+                                        "Des magnifiques plages, de beaux hôtels, des activités sportives et des night-clubs au bord de la me... "        </p>      
+                                                           
+                                </div> */}
+
+
+                            </div>
+                            <div class="text-white pad_0 pic_container col-sm-4 animated fadeInLeft the_hover_act" full_name="Tunis et les Cotes de Carthage"
+                            short_name="TUNIS">
+                                <a href="http://tunisiatourism.info/fr/destination/tunis">
+                                    <img class="card-img tn mx-auto image d-block" src="http://tunisiatourism.info/thumbs/393-250-destinations-33609503-1562523804.jpg" alt="Card image"  />
+                                        <div class="card-img-overlay">
+                                            <h2 class="Card-title full_name_dest">TABARKA</h2>
+                                        </div>
+                                    
+                                </a>
+
+                            </div>
+                            <div class="text-white pad_0 pic_container col-sm-4 animated fadeInLeft the_hover_act" full_name="Tunis et les Cotes de Carthage"
+                            short_name="TUNIS">
+                                <a href="http://tunisiatourism.info/fr/destination/tunis">
+                                    <img class="card-img tn mx-auto image d-block" src="http://tunisiatourism.info/thumbs/393-250-destinations-33609503-1562523804.jpg" alt="Card image"  />
+                                        <div class="card-img-overlay">
+                                            <h2 class="Card-title full_name_dest">TABARKA</h2>
+                                        </div>
+                                    
+                                </a>
+
+                            </div>
+                            <div class="text-white pad_0 pic_container col-sm-4 animated fadeInLeft the_hover_act" full_name="Tunis et les Cotes de Carthage"
+                            short_name="TUNIS">
+                                <a href="http://tunisiatourism.info/fr/destination/tunis">
+                                    <img class="card-img tn mx-auto image d-block" src="http://tunisiatourism.info/thumbs/393-250-destinations-33609503-1562523804.jpg" alt="Card image"  />
+                                        <div class="card-img-overlay">
+                                            <h2 class="Card-title full_name_dest">TABARKA</h2>
+                                        </div>
+                                    
+                                </a>
+
+                            </div>
+                            <div class="text-white pad_0 pic_container col-sm-4 animated fadeInLeft the_hover_act" full_name="Tunis et les Cotes de Carthage"
+                            short_name="TUNIS">
+                                <a href="http://tunisiatourism.info/fr/destination/tunis">
+                                    <img class="card-img tn mx-auto image d-block" src="http://tunisiatourism.info/thumbs/393-250-destinations-33609503-1562523804.jpg" alt="Card image"  />
+                                        <div class="card-img-overlay">
+                                            <h2 class="Card-title full_name_dest">TABARKA</h2>
+                                        </div>
+                                    
+                                </a>
+
+                            </div>
+                            <div class="text-white pad_0 pic_container col-sm-4 animated fadeInLeft the_hover_act" full_name="Tunis et les Cotes de Carthage"
+                            short_name="TUNIS">
+                                <a href="http://tunisiatourism.info/fr/destination/tunis">
+                                    <img class="card-img tn mx-auto image d-block" src="http://tunisiatourism.info/thumbs/393-250-destinations-33609503-1562523804.jpg" alt="Card image"  />
+                                        <div class="card-img-overlay">
+                                            <h2 class="Card-title full_name_dest">TABARKA</h2>
+                                        </div>
+                                    
+                                </a>
+
+                            </div>
+                            <div class="text-white pad_0 pic_container col-sm-4 animated fadeInLeft the_hover_act" full_name="Tunis et les Cotes de Carthage"
+                            short_name="TUNIS">
+                                <a href="http://tunisiatourism.info/fr/destination/tunis">
+                                    <img class="card-img tn mx-auto image d-block" src="http://tunisiatourism.info/thumbs/393-250-destinations-33609503-1562523804.jpg" alt="Card image"  />
+                                        <div class="card-img-overlay">
+                                            <h2 class="Card-title full_name_dest">TABARKA</h2>
+                                        </div>
+                                    
+                                </a>
+
+                            </div>
+                            
+                                    
+
+                                
+
+                           
+
+                        </div>
+
+
+
+                    </div>
+
+
+                </section>
         </section>
 
         

@@ -14,7 +14,25 @@ import {
   } from "reactstrap";
   import './Visites.css';
   import NavbarClient from "../Navbar/navbarClient";
+  import React from 'react'
+//   import {createRoot} from 'react-dom/client';
+//   import {APIProvider, Map, GoogleMap, Marker} from '@vis.gl/react-google-maps';
+//   import { GoogleMap, Marker } from '@vis.gl/react-google-maps';
+//   import { API_KEY } from '../config';  // Assurez-vous que le chemin est correct
+//   import App from '../App';  // Assurez-vous que le chemin est correct
+//   import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 
+
+
+// const containerStyle = {
+//     width: '400px',
+//     height: '400px'
+//   };
+  
+//   const center = {
+//     lat: -3.745,
+//     lng: -38.523
+//   };
 
   // core components
   
@@ -22,10 +40,10 @@ import {
     return (
       <>
         <NavbarClient />
-            <div className="header bg-gradient-info pb-8 pt-5 pt-md-8">
+            {/* <div className="header bg-gradient-info pb-8 pt-5 pt-md-8">
                 <Container fluid>
                 <div className="header-body">
-                    {/* Card stats */}
+                    {/* Card stats 
                     <Row>
                     <Col lg="6" xl="3">
                         <Card className="card-stats mb-4 mb-xl-0">
@@ -144,10 +162,29 @@ import {
                     </Row>
                 </div>
                 </Container>
-            </div>
+            </div> */}
+            {/* <APIProvider apiKey={API_KEY}>
+                <Map
+                    style={{width: '100vw', height: '100vh'}}
+                    defaultCenter={{lat: 22.54992, lng: 0}}
+                    defaultZoom={3}
+                    gestureHandling={'greedy'}
+                    disableDefaultUI={true}
+                />
+             </APIProvider> */}
+        
     </>
+
     );
   };
+//  const root = createRoot(document.querySelector('#app'));
+//  root.render(
+//   <React.StrictMode>
+//     <App />
+//   </React.StrictMode>
+// );
+// const API_KEY = 'your_api_key_here';
+
   
   export default Visites;
   

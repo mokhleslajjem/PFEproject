@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import './navbar.css';
 import { Link } from 'react-router-dom'; // Import Link instead of Router
 import { MdTravelExplore } from "react-icons/md";
+import { MdOutlineTravelExplore } from "react-icons/md";
 import { IoMdCloseCircle } from "react-icons/io";
 import { TbGridDots } from "react-icons/tb";
 // import Loginpage from "../Login/Login";
@@ -20,8 +21,8 @@ const Navbar = () => {
             <header className="header flex">
                 <div className="logoDiv">
                     <a href="#" className="logo flex">
-                        <h1> <MdTravelExplore className="icon"/>
-                            Travel.</h1>
+                    <MdOutlineTravelExplore
+                    className="icon" /> Travel.
                     </a>
                 </div>
                 <div className={active}>
@@ -44,9 +45,11 @@ const Navbar = () => {
                         <li className="navItem">
                             <Link to="/register" className="navLink">Inscription</Link>
                         </li>
+                        <Link to="/register">
                         <button className="btn">
                             <a href="#">RESERVER</a>
                         </button>
+                        </Link>
                     </ul>
                     <div  onClick={removeNavbar} className="closeNavbar">
                         <IoMdCloseCircle className="icon" />
