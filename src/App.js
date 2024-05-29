@@ -14,6 +14,10 @@ import Guide from "./Components/Guide/Guide";
 import Visites from "./Components/Client/Visites";
 import NavbarClient from "./Components/Navbar/navbarClient";
 import Reservation from "./Components/Main/reservation";
+import Maps
+from "./Components/Maps/Maps";
+import "leaflet-control-geocoder/dist/Control.Geocoder.css";
+import "leaflet-control-geocoder/dist/Control.Geocoder.js";
 
 const App = () => {
     return (
@@ -28,6 +32,9 @@ const App = () => {
                 <Route path="/guide/*" element={<GuideLayout />} />
                 <Route path="/client/visites" element={<VisitesLayout />} />
                 <Route path="/client/reservation" element={<ReservationLayout />} />
+                <Route path="/client/localisation" element={<LocalisationLayout />} />
+
+
             </Routes>
         </Router>
     );
@@ -89,5 +96,11 @@ const ReservationLayout = () => (
        <Reservation/>
     </>
 );
+const LocalisationLayout = () => (
+    <>
+       <Maps />
+    </>
+);
+
 
 export default App;
