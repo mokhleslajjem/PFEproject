@@ -56,8 +56,7 @@ const Footer = () => {
                         </div>
 
                         <div data-aos="fade-up" className="footerParagraph">
-                         Lorem ipsum dolor sit amet consectetur adipisicing elit.Ullam inventore eos fuga hic cum voluptatem minima , tempore non odio provident nobis ipsam at, doloremque sed cupiditate ipsum in,atque soluta?   
-                        </div> 
+                        Vous êtes passionné par les voyages et cherchez des séjours en Tunisie ? TunisiaTourism.info est le site qu'il vous faut. Plongez au cœur de la Tunisie et explorez ses magnifiques villes et paysages.                        </div> 
                         <div data-aos="fade-up" className="footerSocials flex ">
                         <AiOutlineTwitter className="icon" />
                         <AiFillYoutube className="icon" />
@@ -112,32 +111,36 @@ const Footer = () => {
                          data-aos-duration="4000" 
                         className="linkGroup">
                             <span className="groupTitle">
-                                PARTNERS
+                            LIENS UTILES
+
                             </span>
                             
                             <li className="footerList flex">
                                <FiChevronRight className="icon"/>
-                              Bookings
+                               CGU Touristes
+
                             </li>
 
                             <li className="footerList flex">
                                <FiChevronRight className="icon"/>
-                              Rentcars
+                               CGU Guides Touristiques
+
                             </li>
 
                             <li className="footerList flex">
                                <FiChevronRight className="icon"/>
-                              HostelWorld
+                               FAQ
                             </li>
 
                             <li className="footerList flex">
                                <FiChevronRight className="icon"/>
-                              Trivago
+                               Contactez-nous
+
                             </li>
 
                             <li className="footerList flex">
                                <FiChevronRight className="icon"/>
-                              TripAdvisor
+                               Plan du site
                             </li>
 
                         </div>
@@ -152,27 +155,27 @@ const Footer = () => {
                             
                             <li className="footerList flex">
                                <FiChevronRight className="icon"/>
-                              London
+                              Tunis
                             </li>
 
                             <li className="footerList flex">
                                <FiChevronRight className="icon"/>
-                              California
+                              Djerba
                             </li>
 
                             <li className="footerList flex">
                                <FiChevronRight className="icon"/>
-                              Indonesia
+                              Sousse
                             </li>
 
                             <li className="footerList flex">
                                <FiChevronRight className="icon"/>
-                              Europe
+                              Hammamet
                             </li>
 
                             <li className="footerList flex">
                                <FiChevronRight className="icon"/>
-                              Oceania
+                              Bizerte
                             </li>
 
                         </div>

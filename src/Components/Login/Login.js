@@ -1,10 +1,25 @@
 // import {useState, useContext} from 'react'
 import { Link } from 'react-router-dom'
+import React, { useContext } from 'react'
+// import { AuthContext } from '../context/AuthContext';
+
 // import AuthContext from '../context/AuthContext'
 import './Login.css'
 
 
 function Inscrirepage() {
+  // const {loginUser} = useContext(AuthContext)
+  // const handleSubmit = e => {
+  //   e.preventDefault()
+  //   const email = e.target.email.value
+  //   const password = e.target.password.value
+
+  //   email.length > 0 && loginUser(email, password)
+
+  //   console.log(email)
+  //   console.log(password)
+   
+  // }
 
   // const [email, setEmail] = useState("")
   // const [username, setUsername] = useState("")
@@ -28,7 +43,7 @@ function Inscrirepage() {
   return (
     <div>
       <>
-        <section className="vh-100" style={{ backgroundColor: "#9A616D" }}>
+        <section className="vh-100" style={{ backgroundColor: "#fff" }}>
           {/* <div className="container py-5 h-100">
             <div className="row d-flex justify-content-center align-items-center h-100">
               <div className="col col-xl-10">
@@ -145,14 +160,14 @@ function Inscrirepage() {
                               style={{ color: "#ff6219" }}
                             />
                             <h3>
-                              Welcome to <b>Desphixs👋</b>
+                              Welcome to <b>Travel👋</b>
                             </h3>
                           </div>
                           <h5
                             className="fw-normal mb-3 pb-3"
                             style={{ letterSpacing: 1 }}
                           >
-                            Sign Ip
+                            Sign Up
                           </h5>
                           <div>
                             <input
@@ -160,6 +175,7 @@ function Inscrirepage() {
                               id="form2Example17"
                               className="form-control "
                               placeholder="Email Address"
+                              name='email'
                               // onChange={e => setEmail(e.target.value)}
                             />
                           </div>
@@ -171,6 +187,7 @@ function Inscrirepage() {
                               id="form2Example17"
                               className="form-control form-control-lg"
                               placeholder="Password"
+                              name='password'
                               // onChange={e => setPassword(e.target.value)}
 
                             />
@@ -180,16 +197,16 @@ function Inscrirepage() {
                               className="btn-submit"
                               type="submit"
                             >
-                               Log In
+                               Log In 
                             </button>
                           </div>
                           <a className="text-11 mb-10" href="#!">
                             Forgot password?
                           </a>
                           <p className="text-11 mb-10" style={{ color: "#393f81" }}>
-                            Already have an account?{" "}
-                            <Link to="/login" style={{ color: "#393f81" }}>
-                              Login Now
+                            don't have an account?{" "}
+                            <Link to="/register" style={{ color: "#393f81" }}>
+                              Register here
                             </Link>
                           </p>
                           <a href="#!" className="text-11 mb-10">
@@ -210,7 +227,7 @@ function Inscrirepage() {
           >
             © 2019 - till date Copyright:
             <a className="text-dark" href="https://mdbootstrap.com/">
-              desphixs.com
+              Travel
             </a>
           </div>
           {/* Copyright */}

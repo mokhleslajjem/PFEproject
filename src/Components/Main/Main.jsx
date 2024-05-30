@@ -3,6 +3,7 @@ import './main.css'
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { HiOutlineClipboardCheck } from "react-icons/hi";
 import { MdBookmarkAdded } from "react-icons/md"
+import { FaPlusCircle } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 
 import img from '../../asser/download.jpg'
@@ -24,7 +25,7 @@ const Data =[
   location: 'Tunisie',
   grade: 'CULTURAL RELAX',
   fees: '$700',
-  description: 'the epitome of romance , Bora Bora is one of the best travel destinations in the World. This place is know for its luxurious stays and adventurous activities'
+  description: 'El Jem ou El Djem est une ville tunisienne située aux portes de la région du Sahel. Elle constitue une municipalité comptant 21 234 habitants en 2014.'
   },
   {
     id:2,
@@ -33,7 +34,7 @@ const Data =[
     location: 'Tunisie',
     grade: 'CULTURAL RELAX',
     fees: '$600',
-    description: 'Huayna Picchu is a mountain in Peru , rising over Machu Picchu, the so called lost city of Incas . Tis place is popular among tourists'
+    description: 'Bizerte est une ville du nord de la Tunisie située entre la mer Méditerranée et le lac de Bizerte. elle est le chef-lieu d un gouvernorat. '
     },
     {
       id:3,
@@ -42,7 +43,7 @@ const Data =[
       location: 'Tunisie',
       grade: 'CULTURAL RELAX',
       fees: '$600',
-      description: 'Huayna Picchu is a mountain in Peru , rising over Machu Picchu, the so called lost city of Incas . Tis place is popular among tourists'
+      description: 'Djerba est une île de la côte tunisienne connue pour ses plages méditerranéennes et ses villes blanches du désert influencées par les cultures berbère, arabe, juive et africaine.'
       },
       {
         id:4,
@@ -51,7 +52,7 @@ const Data =[
         location: 'Tunisie',
         grade: 'CULTURAL RELAX',
         fees: '$600',
-        description: 'Huayna Picchu is a mountain in Peru , rising over Machu Picchu, the so called lost city of Incas . Tis place is popular among tourists'
+        description: 'Hammamet est une ville tunisienne située au nord-est, sur la côte sud-est du cap Bon, à une soixantaine de kilomètres au sud de Tunis. '
         },
         {
           id:5,
@@ -60,7 +61,7 @@ const Data =[
           location: 'Tunise',
           grade: 'CULTURAL RELAX',
           fees: '$600',
-          description: 'Huayna Picchu is a mountain in Peru , rising over Machu Picchu, the so called lost city of Incas . Tis place is popular among tourists'
+          description: 'Kairouan est une ville située dans le désert du nord de la Tunisie. Sous le règne des émirs des Aghlabides, qui ont construit grand nombre de ses monuments. '
           },
           {
             id:6,
@@ -69,7 +70,7 @@ const Data =[
             location: 'Tunisie',
             grade: 'CULTURAL RELAX',
             fees: '$600',
-            description: 'Huayna Picchu is a mountain in Peru , rising over Machu Picchu, the so called lost city of Incas . Tis place is popular among tourists'
+            description: 'Sousse est une ville portuaire de l Est de la Tunisie, située à 143 kilomètres au sud de Tunis, et ouverte sur le golfe d Hammamet.'
             },
   ]
 
@@ -122,12 +123,14 @@ const Main = () => {
 
                         <Link to="/client/visites">
                           <button className="btn flex">
-                          DETAILS <MdBookmarkAdded className="icon"/>
+                          DETAILS
+                           {/* <MdBookmarkAdded className="icon"/> */}
                           </button>
                         </Link>
                         <Link to="/client/reservation">
                           <button className="btn flex">
-                            RESERVER <MdBookmarkAdded className="icon"/>
+                            RESERVER 
+                            {/* <MdBookmarkAdded className="icon"/> */}
                           </button>
                         </Link>
 
@@ -140,8 +143,19 @@ const Main = () => {
               }
  
             </div>
+            {/* <center>
+              <a href="https://tunisiatourism.info/fr/destinations">
+                <button class="btn plusbtn" type="button">
+                  <p>
+                    "Plus de destination"
+                    <FaPlusCircle  className="icon"/>
+                  </p>
+                </button>
+              </a>
+            </center> */}
 
        </section>
+       
     )
 }
 

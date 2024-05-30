@@ -21516,3 +21516,9 @@
   .align-items-center{
     position: relative;
   }
+  .d-flex {
+    position: relative;
+    width: 117%;
+    overflow: hidden;
+   
+  }
