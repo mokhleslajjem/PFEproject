@@ -14,14 +14,13 @@ import Guide from "./Components/Guide/Guide";
 import Visites from "./Components/Client/Visites";
 import NavbarClient from "./Components/Navbar/navbarClient";
 import Reservation from "./Components/Main/reservation";
-<<<<<<< HEAD
-import Maps
-from "./Components/Maps/Maps";
+import Maps from "./Components/Maps/Maps";
+// import LeafletGeocoder from "./Components/Maps/LeafletGeocoder.jsx";
 import "leaflet-control-geocoder/dist/Control.Geocoder.css";
 import "leaflet-control-geocoder/dist/Control.Geocoder.js";
-=======
 import site from "./Components/site/site";
-
+import Chatbot from "./Components/Chatbot/Chatbot.jsx";
+import ErrorBoundary from "./Components/Chatbot/ErrorBoundary";
 
 // import Map from "./Components/map/map";
 // import { AuthContext } from './context/AuthContext'
@@ -32,7 +31,6 @@ import site from "./Components/site/site";
 
 
 
->>>>>>> ae465a8830316ba62ab00988ed7c06f50a01d193
 
 const App = () => {
 
@@ -52,15 +50,8 @@ const App = () => {
                 <Route path="/guide/*" element={<GuideLayout />} />
                 <Route path="/client/visites" element={<VisitesLayout />} />
                 <Route path="/client/reservation" element={<ReservationLayout />} />
-<<<<<<< HEAD
                 <Route path="/client/localisation" element={<LocalisationLayout />} />
 
-=======
-                <Route path="/A propos" element={<siteLayout />} />
-
-                
-                {/* <Route path="/map" element={<MapLayout />} /> */}
->>>>>>> ae465a8830316ba62ab00988ed7c06f50a01d193
 
             </Routes>
         </Router>
@@ -71,6 +62,7 @@ const MainLayout = () => (
     <>
         <Navbar />
         <Home />
+        <Chatbot />
         <Main />
         <Footer />
     </>
@@ -124,7 +116,6 @@ const ReservationLayout = () => (
        {/* <Footer /> */}
     </>
 );
-<<<<<<< HEAD
 const LocalisationLayout = () => (
     <>
        <Maps />
@@ -132,7 +123,6 @@ const LocalisationLayout = () => (
 );
 
 
-=======
 const siteLayout = () => (
     <>
     <site/>
@@ -144,12 +134,5 @@ const siteLayout = () => (
 //       <map />
 //     </>
 // );
-{/* <Cards 
-          name={value.name}
-          age={value.age}
-          city={value.city}
-          country={value.country}
-          id={value.id}
-        />  */}
->>>>>>> ae465a8830316ba62ab00988ed7c06f50a01d193
+
 export default App;
