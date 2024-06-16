@@ -23,6 +23,13 @@ import ListeGuides from "./Components/listeGuide/listeGuide";
 import axios from 'axios';
 
 
+import Maps from "./Components/Maps/Maps";
+// import LeafletGeocoder from "./Components/Maps/LeafletGeocoder.jsx";
+import "leaflet-control-geocoder/dist/Control.Geocoder.css";
+import "leaflet-control-geocoder/dist/Control.Geocoder.js";
+import site from "./Components/site/site";
+import Chatbot from "./Components/Chatbot/Chatbot.jsx";
+import ErrorBoundary from "./Components/Chatbot/ErrorBoundary";
 
 // import Map from "./Components/map/map";
 // import { AuthContext } from './context/AuthContext'
@@ -53,12 +60,11 @@ const App = () => {
                 <Route path="/client/visites" element={<VisitesLayout />} />
                 <Route path="/client/reservation" element={<ReservationLayout />} />
                 <Route path="/A propos" element={<siteLayout />} />
-                <Route path="/Main/details/:id/" element={<SitesDetailLayout />} />
+                {/* <Route path="/Main/details/:id/" element={<SitesDetailLayout />} /> */}
                 <Route path="/sites" element={<SitesLayout />} />
                 <Route path="/liste" element={<ListeGuidesLayout />} />
+                <Route path="/client/localisation" element={<LocalisationLayout />} />
 
-                
-                {/* <Route path="/map" element={<MapLayout />} /> */}
 
             </Routes>
         </Router>
@@ -69,6 +75,7 @@ const MainLayout = () => (
     <>
         <Navbar />
         <Home />
+        <Chatbot />
         <Main />
         <Footer />
     </>
@@ -123,7 +130,15 @@ const ReservationLayout = () => (
        {/* <Footer /> */}
     </>
 );
-const SitesDetailLayout = () => (
+// const SitesDetailLayout = () => (
+const LocalisationLayout = () => (
+    <>
+       <Maps />
+    </>
+);
+
+
+const siteLayout = () => (
     <>
        <SiteDetail/>
     </>
@@ -147,11 +162,5 @@ const ListeGuidesLayout = () => (
 //       <map />
 //     </>
 // );
-{/* <Cards 
-          name={value.name}
-          age={value.age}
-          city={value.city}
-          country={value.country}
-          id={value.id}
-        />  */}
+
 export default App;
