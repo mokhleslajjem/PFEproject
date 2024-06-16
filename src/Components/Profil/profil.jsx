@@ -17,7 +17,7 @@ import {
     return (
       <>
         <div
-            className="header pb-8 pt-5 pt-lg-8 d-flex align-items-center"
+            className=" pb-8 pt-5 pt-lg-8 d-flex align-items-center"
             style={{
             minHeight: "600px",
             backgroundImage:
@@ -39,14 +39,14 @@ import {
                     href="#pablo"
                     onClick={(e) => e.preventDefault()}
                 >
-                    Edit profile
+                    Editer le profil
                 </Button>
                 </Col>
             </Row>
             </Container>
             </div>
         {/* Page content */}
-        <Row>
+        <Row className="customrow">
             <Col className="order-xl-2 mb-5 mb-xl-0" xl="4">
               <Card className="card-profile shadow">
                 <Row className="justify-content-center">
@@ -71,7 +71,7 @@ import {
                       onClick={(e) => e.preventDefault()}
                       size="sm"
                     >
-                      Connect
+                      Connecter
                     </Button>
                     <Button
                       className="float-right"
@@ -85,50 +85,13 @@ import {
                   </div>
                 </CardHeader>
                 <CardBody className="pt-0 pt-md-4">
-                  <Row>
-                    <div className="col">
-                      <div className="card-profile-stats d-flex justify-content-center mt-md-5">
-                        <div>
-                          <span className="heading">22</span>
-                          <span className="description">Friends</span>
-                        </div>
-                        <div>
-                          <span className="heading">10</span>
-                          <span className="description">Photos</span>
-                        </div>
-                        <div>
-                          <span className="heading">89</span>
-                          <span className="description">Comments</span>
-                        </div>
-                      </div>
-                    </div>
-                  </Row>
+                  
                   <div className="text-center">
                     <h3>
-                      Jessica Jones
-                      <span className="font-weight-light">, 27</span>
+                      Mokhles Lajjem
+                      
                     </h3>
-                    <div className="h5 font-weight-300">
-                      <i className="ni location_pin mr-2" />
-                      Bucharest, Romania
-                    </div>
-                    <div className="h5 mt-4">
-                      <i className="ni business_briefcase-24 mr-2" />
-                      Solution Manager - Creative Tim Officer
-                    </div>
-                    <div>
-                      <i className="ni education_hat mr-2" />
-                      University of Computer Science
-                    </div>
-                    <hr className="my-4" />
-                    <p>
-                      Ryan — the name taken by Melbourne-raised, Brooklyn-based
-                      Nick Murphy — writes, performs and records all of his own
-                      music.
-                    </p>
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                      Show more
-                    </a>
+                    
                   </div>
                 </CardBody>
               </Card>
@@ -138,7 +101,7 @@ import {
                 <CardHeader className="bg-white border-0">
                   <Row className="align-items-center">
                     <Col xs="8">
-                      <h3 className="mb-0">My account</h3>
+                      <h3 className="mb-0">Mon compte</h3>
                     </Col>
                     <Col className="text-right" xs="4">
                       <Button
@@ -147,7 +110,7 @@ import {
                         onClick={(e) => e.preventDefault()}
                         size="sm"
                       >
-                        Settings
+                        Paramètres
                       </Button>
                     </Col>
                   </Row>
@@ -155,7 +118,7 @@ import {
                 <CardBody>
                   <Form>
                     <h6 className="heading-small text-muted mb-4">
-                      User information
+                    Informations de l'utilisateur
                     </h6>
                     <div className="pl-lg-4">
                       <Row>
@@ -165,7 +128,7 @@ import {
                               className="form-control-label"
                               htmlFor="input-username"
                             >
-                              Username
+                              Nom d'utilisateur
                             </label>
                             <Input
                               className="form-control-alternative"
@@ -182,7 +145,7 @@ import {
                               className="form-control-label"
                               htmlFor="input-email"
                             >
-                              Email address
+                             Adresse e-mail
                             </label>
                             <Input
                               className="form-control-alternative"
@@ -200,7 +163,7 @@ import {
                               className="form-control-label"
                               htmlFor="input-first-name"
                             >
-                              First name
+                              Prénom
                             </label>
                             <Input
                               className="form-control-alternative"
@@ -217,7 +180,7 @@ import {
                               className="form-control-label"
                               htmlFor="input-last-name"
                             >
-                              Last name
+                             Nom
                             </label>
                             <Input
                               className="form-control-alternative"
@@ -233,7 +196,7 @@ import {
                     <hr className="my-4" />
                     {/* Address */}
                     <h6 className="heading-small text-muted mb-4">
-                      Contact information
+                    Coordonnées
                     </h6>
                     <div className="pl-lg-4">
                       <Row>
@@ -243,7 +206,7 @@ import {
                               className="form-control-label"
                               htmlFor="input-address"
                             >
-                              Address
+                              Adresse
                             </label>
                             <Input
                               className="form-control-alternative"

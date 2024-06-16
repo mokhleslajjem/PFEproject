@@ -42,7 +42,7 @@ function Inscrirepage() {
   return (
     <div>
       <>
-        <section className="vh-100" style={{ backgroundColor: "#9A616D" }}>
+        <section className="vh-100" style={{ backgroundColor: "#fff" }}>
           <div className='formcontainer'>
             <img
               src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/img1.webp"
@@ -56,7 +56,7 @@ function Inscrirepage() {
                   <i className="fas fa-cubes fa-2x me-3" style={{ color: "#ff6219" }} />
                   <h3>Welcome to <b>Travel👋</b></h3>
                 </div>
-                <h5 className="fw-normal mb-3 pb-3" style={{ letterSpacing: 1 }}>Sign Up</h5>
+                <h5 className="fw-normal mb-3 pb-3" style={{ letterSpacing: 1 }}>Inscription</h5>
                 
                 <div className="form-outline mb-4">
                   <select value={role} onChange={handleRoleChange} className="form-control">
@@ -69,21 +69,21 @@ function Inscrirepage() {
                 <div className="form-outline mb-4">
                   <input
                     type="text"
-                    name="firstName"
+                    name="Prénom"
                     value={formData.firstName}
                     onChange={handleInputChange}
                     className="form-control"
-                    placeholder="First name"
+                    placeholder="Prénom"
                   />
                 </div>
                 <div className="form-outline mb-4">
                   <input
                     type="text"
-                    name="lastName"
+                    name="Nom"
                     value={formData.lastName}
                     onChange={handleInputChange}
                     className="form-control"
-                    placeholder="Last name"
+                    placeholder="Nom"
                   />
                 </div>
 
@@ -119,7 +119,7 @@ function Inscrirepage() {
                     value={formData.email}
                     onChange={handleInputChange}
                     className="form-control"
-                    placeholder="Email Address"
+                    placeholder="Adresse e-mail"
                   />
                 </div>
                 <div className="form-outline mb-4">
@@ -129,7 +129,7 @@ function Inscrirepage() {
                     value={formData.password}
                     onChange={handleInputChange}
                     className="form-control"
-                    placeholder="Password"
+                    placeholder="Mot de passe"
                   />
                 </div>
                 <div className="form-outline mb-4">
@@ -139,7 +139,7 @@ function Inscrirepage() {
                     value={formData.confirmPassword}
                     onChange={handleInputChange}
                     className="form-control"
-                    placeholder="Confirm Password"
+                    placeholder="Confirmez le mot de passe"
                   />
                 </div>
                 <div className="form-outline mb-4">
@@ -149,20 +149,20 @@ function Inscrirepage() {
                     value={formData.telephone}
                     onChange={handleInputChange}
                     className="form-control"
-                    placeholder="Telephone"
+                    placeholder="Téléphone"
                   />
                 </div>
 
                 <div className="pt-1 mb-4">
-                  <button className="btn-submit" type="submit">Sign Up</button>
+                  <button className="btn-submit" type="submit">Inscription </button>
                 </div>
 
                 <p className="text-11 mb-10" style={{ color: "#393f81" }}>
-                  Already have an account?{" "}
-                  <Link to="/login" style={{ color: "#393f81" }}>Login Now</Link>
+                Vous avez déjà un compte?{" "}
+                  <Link to="/login" style={{ color: "#393f81" }}>connexion</Link>
                 </p>
-                <a href="#!" className="text-11 mb-10">Terms of use.</a>
-                <a href="#!" className="text-11 mb-10">Privacy policy</a>
+                <a href="#!" className="text-11 mb-10">Conditions d'utilisation.</a>
+                <a href="#!" className="text-11 mb-10">Politique de confidentialité</a>
               </form>
             </div>
           </div>

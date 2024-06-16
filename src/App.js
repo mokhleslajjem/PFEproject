@@ -14,7 +14,14 @@ import Guide from "./Components/Guide/Guide";
 import Visites from "./Components/Client/Visites";
 import NavbarClient from "./Components/Navbar/navbarClient";
 import Reservation from "./Components/Main/reservation";
-import site from "./Components/site/site";
+import SiteDetail from "./Components/Main/details";
+import Sites from "./Components/sites/sites";
+import ListeGuides from "./Components/listeGuide/listeGuide";
+
+
+
+import axios from 'axios';
+
 
 
 // import Map from "./Components/map/map";
@@ -46,6 +53,9 @@ const App = () => {
                 <Route path="/client/visites" element={<VisitesLayout />} />
                 <Route path="/client/reservation" element={<ReservationLayout />} />
                 <Route path="/A propos" element={<siteLayout />} />
+                <Route path="/Main/details/:id/" element={<SitesDetailLayout />} />
+                <Route path="/sites" element={<SitesLayout />} />
+                <Route path="/liste" element={<ListeGuidesLayout />} />
 
                 
                 {/* <Route path="/map" element={<MapLayout />} /> */}
@@ -86,6 +96,7 @@ const ContactPageLayout = () => (
 const EspaceClientLayout = () => (
     <>
        <Client/>
+       
       
     </>
 );
@@ -112,12 +123,25 @@ const ReservationLayout = () => (
        {/* <Footer /> */}
     </>
 );
-const siteLayout = () => (
+const SitesDetailLayout = () => (
     <>
-    <site/>
-    
+       <SiteDetail/>
     </>
 );
+const SitesLayout = () => (
+    <>
+       <Sites/>
+    </>
+);
+const ListeGuidesLayout = () => (
+    <>
+       <Navbar />
+       <ListeGuides/>
+       <Footer />
+    </>
+);
+
+
 // const MapLayout = () => (
 //     <>
 //       <map />

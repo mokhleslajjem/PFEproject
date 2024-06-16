@@ -5,6 +5,11 @@ import { MdTravelExplore } from "react-icons/md";
 import { IoMdCloseCircle } from "react-icons/io";
 import { TbGridDots } from "react-icons/tb";
 import img from '../../asser/profil.jpg'
+import sousse from '../../asser/sousse.jpg'
+import djerba from '../../asser/djerba.jpg'
+import images from '../../asser/images.jpg'
+import profil1 from '../../asser/profil1.png'
+
 import { CgProfile } from "react-icons/cg";
 import { IoMdSettings } from "react-icons/io";
 import { TbLogout } from "react-icons/tb";
@@ -71,7 +76,7 @@ const Client = () => {
                                         <span className="avatar avatar-sm rounded-circle">
                                             <img
                                             alt="..."
-                                            src={require("../../asser/team-4-800x800.jpg")}
+                                            src={profil1}
                                             />
                                         </span>
                                     </Link>
@@ -84,7 +89,7 @@ const Client = () => {
                             </DropdownToggle>
                             <DropdownMenu className="dropdown-menu-arrow" right>
                                 <DropdownItem className="noti-title" header tag="div">
-                                    <h6 className="text-overflow m-0">Welcome!</h6>
+                                    <h6 className="text-overflow m-0">Bienvenue!</h6>
                                 </DropdownItem>
                                 <DropdownItem to="/profil/*" tag={Link}>
                                     <i className="ni ni-single-02" />
@@ -92,7 +97,7 @@ const Client = () => {
                                 </DropdownItem>
                                 <DropdownItem to="/client" tag={Link}>
                                     <i className="ni ni-support-16" />
-                                    <span>Sites</span>
+                                    <span>Guides</span>
                                 </DropdownItem>
                                 <DropdownItem to="/client/visites" tag={Link}>
                                     <i className="ni ni-calendar-grid-58" />
@@ -105,7 +110,7 @@ const Client = () => {
                                 <DropdownItem divider />
                                 <DropdownItem href="#pablo" onClick={(e) => e.preventDefault()}>
                                     <i className="ni ni-user-run" />
-                                    <span>Logout</span>
+                                    <span>Déconnexion</span>
                                 </DropdownItem>
                             </DropdownMenu>
                         </UncontrolledDropdown>
@@ -159,10 +164,10 @@ const Client = () => {
                     </div>
                     <div class="container tt_desktop">
                         <div class="row">
-                            <div class="text-white pad_0 pic_container col-sm-4 animated fadeInLeft the_hover_act" full_name="Tunis et les Cotes de Carthage"
+                            <div class="text-white p-0 pad_0 pic_container col-sm-4 animated fadeInLeft the_hover_act" full_name="Tunis et les Cotes de Carthage"
                             short_name="TUNIS">
                                 <a href="http://tunisiatourism.info/fr/destination/tunis">
-                                    <img class="card-img tn mx-auto image d-block" src="http://tunisiatourism.info/thumbs/393-250-destinations-74090301-1514891148.jpg" alt="Card image"  />
+                                    <img class="tn mx-auto image d-block" src="http://tunisiatourism.info/thumbs/393-250-destinations-74090301-1514891148.jpg" alt="Card image"  />
                                         <div class="card-img-overlay">
                                             <h2 class="Card-title full_name_dest">TUNIS</h2>
                                         </div>
@@ -177,10 +182,10 @@ const Client = () => {
                                 </div> */}
 
                             </div>
-                            <div class="text-white pad_0 pic_container col-sm-4 animated fadeInLeft the_hover_act" full_name="Tabarka et Ain draham"
+                            <div class="text-white p-0 pad_0 pic_container col-sm-4 animated fadeInLeft the_hover_act" full_name="Tabarka et Ain draham"
                             short_name="TABARKA">
                                 <a href="http://tunisiatourism.info/fr/destination/tunis">
-                                    <img class="card-img tn mx-auto image d-block" src="http://tunisiatourism.info/thumbs/393-250-destinations-33609503-1562523804.jpg" alt="Card image"  />
+                                    <img class="tn mx-auto image d-block" src="http://tunisiatourism.info/thumbs/393-250-destinations-33609503-1562523804.jpg" alt="Card image"  />
                                         <div class="card-img-overlay">
                                             <h2 class="Card-title full_name_dest">TABARKA</h2>
                                         </div>
@@ -194,10 +199,10 @@ const Client = () => {
                                 </div> */}
 
                             </div>
-                            <div class="text-white pad_0 pic_container col-sm-4 animated fadeInLeft the_hover_act" full_name="Hammamet et le Cap Bon"
+                            <div class="text-white p-0 pad_0 pic_container col-sm-4 animated fadeInLeft the_hover_act" full_name="Hammamet et le Cap Bon"
                             short_name="HAMMAMET">
                                 <a href="http://tunisiatourism.info/fr/destination/tunis">
-                                    <img class="card-img tn mx-auto image d-block" src="http://tunisiatourism.info/thumbs/393-250-destinations-53544624-1562523579.jpg" alt="Card image"  />
+                                    <img class="tn mx-auto image d-block" src="http://tunisiatourism.info/thumbs/393-250-destinations-53544624-1562523579.jpg" alt="Card image"  />
                                         <div class="card-img-overlay">
                                             <h2 class="Card-title full_name_dest">HAMMAMET</h2>
                                         </div>
@@ -212,7 +217,40 @@ const Client = () => {
 
 
                             </div>
-                            <div class="text-white pad_0 pic_container col-sm-4 animated fadeInLeft the_hover_act" full_name="Tunis et les Cotes de Carthage"
+                            <div class="text-white p-0 pad_0 pic_container col-sm-4 animated fadeInLeft the_hover_act" full_name="Tunis et les Cotes de Carthage"
+                            short_name="TUNIS">
+                                <a href="http://tunisiatourism.info/fr/destination/tunis">
+                                    <img class="tn mx-auto image d-block" src={sousse} alt="Card image"  />
+                                        <div class="card-img-overlay">
+                                            <h2 class="Card-title full_name_dest">SOUSSE</h2>
+                                        </div>
+                                    
+                                </a>
+
+                            </div>
+                            <div class="text-white p-0 pad_0 pic_container col-sm-4 animated fadeInLeft the_hover_act" full_name="Tunis et les Cotes de Carthage"
+                            short_name="TUNIS">
+                                <a href="http://tunisiatourism.info/fr/destination/tunis">
+                                    <img class="tn mx-auto image d-block" src={djerba} alt="Card image"  />
+                                        <div class="card-img-overlay">
+                                            <h2 class="Card-title full_name_dest">DJERBA</h2>
+                                        </div>
+                                    
+                                </a>
+
+                            </div>
+                            <div class="text-white p-0 pad_0 pic_container col-sm-4 animated fadeInLeft the_hover_act" full_name="Tunis et les Cotes de Carthage"
+                            short_name="TUNIS">
+                                <a href="http://tunisiatourism.info/fr/destination/tunis">
+                                    <img class=" tn mx-auto image d-block" src={images} alt="Card image"  />
+                                        <div class="card-img-overlay">
+                                            <h2 class="Card-title full_name_dest">SAHARA</h2>
+                                        </div>
+                                    
+                                </a>
+
+                            </div>
+                            {/* <div class="text-white pad_0 pic_container col-sm-4 animated fadeInLeft the_hover_act" full_name="Tunis et les Cotes de Carthage"
                             short_name="TUNIS">
                                 <a href="http://tunisiatourism.info/fr/destination/tunis">
                                     <img class="card-img tn mx-auto image d-block" src="http://tunisiatourism.info/thumbs/393-250-destinations-33609503-1562523804.jpg" alt="Card image"  />
@@ -245,40 +283,7 @@ const Client = () => {
                                 </a>
 
                             </div>
-                            <div class="text-white pad_0 pic_container col-sm-4 animated fadeInLeft the_hover_act" full_name="Tunis et les Cotes de Carthage"
-                            short_name="TUNIS">
-                                <a href="http://tunisiatourism.info/fr/destination/tunis">
-                                    <img class="card-img tn mx-auto image d-block" src="http://tunisiatourism.info/thumbs/393-250-destinations-33609503-1562523804.jpg" alt="Card image"  />
-                                        <div class="card-img-overlay">
-                                            <h2 class="Card-title full_name_dest">TABARKA</h2>
-                                        </div>
-                                    
-                                </a>
-
-                            </div>
-                            <div class="text-white pad_0 pic_container col-sm-4 animated fadeInLeft the_hover_act" full_name="Tunis et les Cotes de Carthage"
-                            short_name="TUNIS">
-                                <a href="http://tunisiatourism.info/fr/destination/tunis">
-                                    <img class="card-img tn mx-auto image d-block" src="http://tunisiatourism.info/thumbs/393-250-destinations-33609503-1562523804.jpg" alt="Card image"  />
-                                        <div class="card-img-overlay">
-                                            <h2 class="Card-title full_name_dest">TABARKA</h2>
-                                        </div>
-                                    
-                                </a>
-
-                            </div>
-                            <div class="text-white pad_0 pic_container col-sm-4 animated fadeInLeft the_hover_act" full_name="Tunis et les Cotes de Carthage"
-                            short_name="TUNIS">
-                                <a href="http://tunisiatourism.info/fr/destination/tunis">
-                                    <img class="card-img tn mx-auto image d-block" src="http://tunisiatourism.info/thumbs/393-250-destinations-33609503-1562523804.jpg" alt="Card image"  />
-                                        <div class="card-img-overlay">
-                                            <h2 class="Card-title full_name_dest">TABARKA</h2>
-                                        </div>
-                                    
-                                </a>
-
-                            </div>
-                            
+                             */}
                                     
 
                                 

@@ -1,10 +1,22 @@
 // import {useState, useContext} from 'react'
 import { Link } from 'react-router-dom'
 import React, { useContext } from 'react'
+import { useState, useEffect } from 'react';
+import axios from 'axios';
 // import { AuthContext } from '../context/AuthContext';
 
 // import AuthContext from '../context/AuthContext'
 import './Login.css'
+
+// axios.defaults.xsrfCookieName = 'csrftoken';
+// axios.defaults.xsrfHeaderName = 'X-CSRFToken';
+// axios.defaults.withCredentials = true;
+
+
+// const client = axios.create({
+//   baseURL: "http://127.0.0.1:8000"
+// });
+
 
 
 function Inscrirepage() {
@@ -39,6 +51,7 @@ function Inscrirepage() {
   //   registerUser(email, username, password, password2)
   // }
   
+
 
   return (
     <div>
@@ -167,14 +180,14 @@ function Inscrirepage() {
                             className="fw-normal mb-3 pb-3"
                             style={{ letterSpacing: 1 }}
                           >
-                            Sign Up
+                            Inscription
                           </h5>
                           <div>
                             <input
                               type="email"
                               id="form2Example17"
                               className="form-control "
-                              placeholder="Email Address"
+                              placeholder="Adresse e-mail"
                               name='email'
                               // onChange={e => setEmail(e.target.value)}
                             />
@@ -187,7 +200,7 @@ function Inscrirepage() {
                               id="form2Example17"
                               className="form-control form-control-lg"
                               placeholder="Password"
-                              name='password'
+                              name='Mot de passe'
                               // onChange={e => setPassword(e.target.value)}
 
                             />
@@ -197,23 +210,23 @@ function Inscrirepage() {
                               className="btn-submit"
                               type="submit"
                             >
-                               Log In 
+                               Connexion 
                             </button>
                           </div>
                           <a className="text-11 mb-10" href="#!">
-                            Forgot password?
+                          Mot de passe oublié?
                           </a>
                           <p className="text-11 mb-10" style={{ color: "#393f81" }}>
-                            don't have an account?{" "}
+                          vous n'avez pas de compte ?{" "}
                             <Link to="/register" style={{ color: "#393f81" }}>
-                              Register here
+                            Inscrivez-vous ici
                             </Link>
                           </p>
                           <a href="#!" className="text-11 mb-10">
-                            Terms of use.
+                          Conditions d'utilisation.
                           </a>
                           <a href="#!" className="text-11 mb-10">
-                            Privacy policy
+                          Politique de confidentialité
                           </a>
                         </form>
                       </div>

@@ -21518,7 +21518,12 @@
   }
   .d-flex {
     position: relative;
-    width: 117%;
     overflow: hidden;
    
+  }
+
+  .customrow{
+    margin: -100px 0 0 15px;
+    position: relative;
+    z-index: 1001;
   }

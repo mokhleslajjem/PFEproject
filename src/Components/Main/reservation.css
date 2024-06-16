@@ -5,14 +5,17 @@ color:blue;
 padding:10rem ;
 border-radius: 2.375rem;
 border-radius: 0.375rem;
+justify-content: center;
 /* max-width: 84.66667%;;
 max-height: 84.66667%;;
 line-height: 2.5;
 height: 1px; */
 }
+/* .justify-content-center{
+    justify-content: center;
+} */
 
-
-.order-xl-1{
+/* .order-xl-1{
     position: center;
     border-radius: 0.375rem;
     color:blue;
@@ -25,17 +28,18 @@ height: 1px; */
     font-size: 10px;
     height: 1200px;
     width: 3000px;
-    margin: 0 auto;
+    margin: 0 auto; */
     
     
     
     /* width: 100%;
     height: max-content;
+
     padding: 8rem 1.5rem 3rem;
     align-items: stretch;
     justify-content: center; */
-    /* padding-top: 0rem !important; */
-}
+    /* padding-top: 0rem !important; 
+}*/
 
 .bg-secondary{
     background: rgb(81, 77, 77)  ;

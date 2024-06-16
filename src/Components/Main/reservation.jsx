@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import './reservation.css'
 import { Link } from 'react-router-dom'; // Import Link instead of Router
 import { MdTravelExplore } from "react-icons/md";
+import profil1 from '../../asser/profil1.png'
 
 
 import {
@@ -71,7 +72,7 @@ const Reservation = () => {
                                   <span className="avatar avatar-sm rounded-circle">
                                       <img
                                       alt="..."
-                                      src={require("../../asser/team-4-800x800.jpg")}
+                                      src={profil1}
                                       />
                                   </span>
                               </Link>
@@ -105,7 +106,7 @@ const Reservation = () => {
                           <DropdownItem divider />
                           <DropdownItem href="#pablo" onClick={(e) => e.preventDefault()}>
                               <i className="ni ni-user-run" />
-                              <span>Logout</span>
+                              <span>Déconnexion</span>
                           </DropdownItem>
                       </DropdownMenu>
                   </UncontrolledDropdown>
@@ -155,7 +156,7 @@ const Reservation = () => {
       </header> 
    
       <section
-      className="header pb-8 pt-5 pt-lg-8 d-flex align-items-center"
+      className="justify-content-center pb-8 pt-5 pt-lg-8 d-flex align-items-center"
       style={{
       minHeight: "600px",
       backgroundImage:
@@ -186,8 +187,8 @@ const Reservation = () => {
   //       
    
 
-      <Col className="order-xl-1" xl="8">
-                  <Card className="bg-secondary shadow">
+      <Col className="justify-content-center order-xl-1" xl="8">
+                  <Card className="bg-secondary shadow" >
                     <CardHeader className="bg-white border-0">
                       <Row className="align-items-center">
                         <Col xs="8">
@@ -307,25 +308,7 @@ const Reservation = () => {
                               </FormGroup>
                             </Col>
                           </Row>
-                          <Row>
-                            <Col lg="4">
-                              <FormGroup>
-                                <label
-                                  className="form-control-label"
-                                  htmlFor="input-city"
-                                >
-                                  Civilité
-                                </label>
-                                <Input
-                                  className="form-control-alternative"          
-                                  id="input-city"
-                                  placeholder="Civilité"
-                                  type="text"
-                                />
-                              </FormGroup>
-                            </Col>
-                            
-                          </Row>
+                         
 
                           <Button
                             color="info"

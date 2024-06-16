@@ -19,6 +19,7 @@ import {
     Nav,
     Media,
   } from "reactstrap";
+import { color } from "@mui/system";
 // import Loginpage from "../Login/Login";
 
 const Guide = () => {
@@ -75,19 +76,19 @@ const Guide = () => {
                             </DropdownToggle>
                             <DropdownMenu className="dropdown-menu-arrow" right>
                                 <DropdownItem className="noti-title" header tag="div">
-                                    <h6 className="text-overflow m-0">Welcome!</h6>
+                                    <h6 className="text-overflow m-0">Bienvenue!</h6>
                                 </DropdownItem>
                                 <DropdownItem to="/profil/*" tag={Link}>
                                     <i className="ni ni-single-02" />
-                                    <span>Mon Profil</span>
+                                    <span>Acceuil</span>
                                 </DropdownItem>
                                 <DropdownItem to="/client" tag={Link}>
                                     <i className="ni ni-support-16" />
-                                    <span>Sites</span>
+                                    <span>Mon Profil</span>
                                 </DropdownItem>
                                 <DropdownItem to="/client/visites" tag={Link}>
                                     <i className="ni ni-calendar-grid-58" />
-                                    <span>Visites</span>
+                                    <span>Avis</span>
                                 </DropdownItem>
                                 <DropdownItem to="/admin/user-profile" tag={Link}>
                                     <i className="ni ni-settings-gear-65" />
@@ -96,7 +97,7 @@ const Guide = () => {
                                 <DropdownItem divider />
                                 <DropdownItem href="#pablo" onClick={(e) => e.preventDefault()}>
                                     <i className="ni ni-user-run" />
-                                    <span>Logout</span>
+                                    <span>Déconnexion</span>
                                 </DropdownItem>
                             </DropdownMenu>
                         </UncontrolledDropdown>
@@ -105,6 +106,8 @@ const Guide = () => {
   
 
             </header>
+
+            <h3>Bienvenue Mokhles !</h3>
         </section>
 
         
