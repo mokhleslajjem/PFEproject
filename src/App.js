@@ -1,6 +1,8 @@
 import React from "react";
 import './app.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import Home from './Components/Home/Home';
 import Main from './Components/Main/Main';
 import Navbar from './Components/Navbar/Navbar';
@@ -14,7 +16,7 @@ import Guide from "./Components/Guide/Guide";
 import Visites from "./Components/Client/Visites";
 import NavbarClient from "./Components/Navbar/navbarClient";
 import Reservation from "./Components/Main/reservation";
-import SiteDetail from "./Components/Main/details";
+// import SiteDetail from "./Components/Main/details";
 import Sites from "./Components/sites/sites";
 import ListeGuides from "./Components/listeGuide/listeGuide";
 
@@ -27,7 +29,6 @@ import Maps from "./Components/Maps/Maps";
 // import LeafletGeocoder from "./Components/Maps/LeafletGeocoder.jsx";
 import "leaflet-control-geocoder/dist/Control.Geocoder.css";
 import "leaflet-control-geocoder/dist/Control.Geocoder.js";
-import site from "./Components/site/site";
 import Chatbot from "./Components/Chatbot/Chatbot.jsx";
 import ErrorBoundary from "./Components/Chatbot/ErrorBoundary";
 
@@ -41,7 +42,9 @@ import ErrorBoundary from "./Components/Chatbot/ErrorBoundary";
 
 
 
-const App = () => {
+
+
+function App()  {
 
 //     const [data, setData] = useState([]);
 //   useEffect(() => {
@@ -138,11 +141,11 @@ const LocalisationLayout = () => (
 );
 
 
-const siteLayout = () => (
-    <>
-       <SiteDetail/>
-    </>
-);
+// const siteLayout = () => (
+//     <>
+//        <SiteDetail/>
+//     </>
+// );
 const SitesLayout = () => (
     <>
        <Sites/>

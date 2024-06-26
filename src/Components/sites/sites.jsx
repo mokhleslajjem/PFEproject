@@ -18,7 +18,7 @@ const Sites = () => {
   const [sites, setSites] = useState([])
 
   const getSites = async () => {
-    const response = await axios.get('http://127.0.0.1:8000/api/sites/');
+    const response = await axios.get('http://127.0.0.1:8000/api/site_archeologique/');
     // console.log(response.data)
     setSites(response.data)
   }
@@ -53,16 +53,12 @@ const Sites = () => {
                <img src={sites.image} height="200" width="300"/>
           </div>  
         <div className="cardInfo">
-          <h4 className="destTiltle">{sites.name}</h4>
+          <h4 className="destTiltle">{sites.nom}</h4>
           <span className="continent flex">
             <HiOutlineLocationMarker className='icon' />
             <span className="name">{sites.localisation}</span>
           </span>
-          <div className="fees flex">
-            <div className="price">
-              <h5>{sites.price}</h5>
-            </div>  
-          </div>  
+          
         </div>
         <div className="desc">
           <p>{sites.description}</p>
