@@ -350,14 +350,13 @@ function Loginpage() {
         try {
             const data = await signIn(credentials);
             toast.success("Connexion réussie!");
-            // Sauvegardez le token dans le localStorage ou le contexte d'authentification
+            // Sauvegardez les informations de l'utilisateur dans le localStorage
             localStorage.setItem('authToken', data.token);
-            navigate('/dashboard');  // Redirigez vers la page de tableau de bord après connexion réussie
+            navigate('/client');  // Redirigez vers la page de tableau de bord après connexion réussie
         } catch (error) {
             toast.error("Erreur de connexion: " + error.detail);
         }
     };
-
     return (
         <div>
             <section className="vh-100" style={{ backgroundColor: "#9A616D" }}>

@@ -33,7 +33,7 @@ import {
             <Container className="d-flex align-items-center" fluid>
             <Row>
                 <Col lg="7" md="10">
-                <h1 className="display-2 text-white">Hello Mokhles</h1>
+                <h1 className="display-2 text-white">Hello </h1>
                 <Button
                     color="info"
                     href="#pablo"

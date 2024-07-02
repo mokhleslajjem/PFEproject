@@ -29,8 +29,9 @@ import Maps from "./Components/Maps/Maps";
 // import LeafletGeocoder from "./Components/Maps/LeafletGeocoder.jsx";
 import "leaflet-control-geocoder/dist/Control.Geocoder.css";
 import "leaflet-control-geocoder/dist/Control.Geocoder.js";
-import Chatbot from "./Components/Chatbot/Chatbot.jsx";
+//import Chatbot from "./Components/Chatbot/Chatbot.jsx";
 import ErrorBoundary from "./Components/Chatbot/ErrorBoundary";
+import Chat from "./Components/Chatbot/Chat.jsx";
 
 // import Map from "./Components/map/map";
 // import { AuthContext } from './context/AuthContext'
@@ -78,7 +79,7 @@ const MainLayout = () => (
     <>
         <Navbar />
         <Home />
-        <Chatbot />
+        <Chat />
         <Main />
         <Footer />
     </>

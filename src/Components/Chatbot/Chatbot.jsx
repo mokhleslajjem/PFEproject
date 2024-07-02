@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 
 export class Chatbot extends Component {
 
+  
+
     componentDidMount() {
     (function(d, m){
         var kommunicateSettings = 

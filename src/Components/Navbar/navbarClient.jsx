@@ -38,6 +38,8 @@ const NavbarClient = () => {
     const removeNavbar = () => {
         setActive('navBar ');
     };
+
+    const userName = localStorage.getItem('userName');
   
     return (
         <section className="navBarSection">
@@ -77,7 +79,7 @@ const NavbarClient = () => {
                                     </Link>
                                     <Media className="ml-2 d-none d-lg-block">
                                         <span className="mb-0 text-sm font-weight-bold">
-                                        Mokhles Lajjem
+                                        {userName}
                                         </span>
                                     </Media>
                                 </Media>

@@ -20,10 +20,10 @@ const Navbar = () => {
         <section className="navBarSection">
             <header className="header flex">
                 <div className="logoDiv">
-                    <a href="#" className="logo flex">
+                    {/* <a href="#" className="logo flex">
                     <MdOutlineTravelExplore
                     className="icon" /> Travel.
-                    </a>
+                    </a> */}
                 </div>
                 <div className={active}>
                     <ul className="navLists grid">
@@ -47,7 +47,7 @@ const Navbar = () => {
                         </li>
                         <Link to="/login">
                         <button className="btn">
-                            <a href="#">RESERVER</a>
+                         RESERVER
                         </button>
                         </Link>
                     </ul>
